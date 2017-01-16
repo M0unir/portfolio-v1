@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "postinstall": "bower install && gulp build",
-    "heroku-postbuild": "bower install && gulp build"
+    "postinstall": "gulp build",
+    "heroku-postbuild": "gulp build"
   },
   "repository": {
     "type": "git",

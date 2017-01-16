@@ -1,0 +1,25 @@
+<div class="section">
+  <ul class="row projects">
+    <li class="col-full" ng-repeat="project in projects">
+      <figure class="project-image">
+        <a ui-sref="projects.details({ projectId: project.id })">
+          <img width="100%" src="{{project.image}}" alt="">
+        </a>
+      </figure>
+      <div class="project-description">
+        <div class="description-container">
+          <h4>{{project.title}}</h4>
+          <strong>{{project.type}}</strong>
+          <p class="limited">{{project.description}}</p>
+          <!--<ul><strong>Skills:</strong>
+             <li ng-repeat="skill in project.skills">{{skill}}</li>
+           </ul>-->
+          <!--<button class="btn-inverted" ui-sref="projects.details({ personId: person.id })">Check project</button>-->
+          <a class="btn-inverted" style="margin-top:18px;" ui-sref="projects.details({ projectId: project.id })">Check project</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<hr class="gigantic transparent ">
+<hr class="gigantic transparent">

@@ -1,0 +1,30 @@
+  <nav id="navigation" class="nav-container">
+    <div class="nav-elems">
+      <header>
+        <h2>Navigation</h2>
+      </header>
+      <ul class="nav">
+        <li>
+          <a ui-sref="home" ng-click="menu.toggleNavbar()" ui-sref-active="active">HOME</a>
+        </li>
+        <li>
+          <a ui-sref="projects.list" ng-click="menu.toggleNavbar()" ui-sref-active="active">PROJECTS</a>
+        </li>
+        <li>
+          <a ui-sref="about" ng-click="menu.toggleNavbar()" ui-sref-active="active">ABOUT</a>
+        </li>
+        <li>
+          <a ui-sref="contact" ng-click="menu.toggleNavbar()" ui-sref-active="active">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+ <div class="overlay"></div> 
+<a ui-sref="home">
+  <div class="logo animated pulse"></div>
+</a>
+<header class="header cf">
+  <a href="#navigation" class="nav-trigger animated pulse" ng-click="menu.toggleNavbar($event)">
+      Menu <span></span>
+    </a>
+</header>

@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+.container {
+  @include outer-container(65%);
+  @include MQ(M) {
+    @include outer-container(80%);
+  }
+  ;
+  @include MQ(S) {
+    @include outer-container(80%);
+  }
+  ;
+}
+
+.row {
+  @include row;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.xs-full {
+  @include MQ(S) {
+    text-align: center;
+  }
+}
+
+.col-full {
+  @include span-columns(12);
+}

@@ -1,0 +1,208 @@
+/*------------------------------------*\
+    #PRIMARY NAVIGATION
+\*------------------------------------*/
+
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+$menuItems: 4;
+
+.nav-trigger {
+  position: fixed;
+  z-index: 4;
+  top: 40px;
+  right: 40px;
+  width: 44px;
+  overflow: hidden;
+  color: transparent;
+  white-space: nowrap;
+  text-indent: 100%;
+  width: 60px;
+  height: 60px;
+  span {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background 0.3s;
+  }
+  &:hover span {
+    background-color: gray;
+    &::before,
+    &::after {
+      background-color: gray;
+    }
+  }
+}
+
+.nav-open.scrolled .nav-trigger {
+  background: rgba(0, 0, 0, 0);
+}
+
+.scrolled .nav-trigger {
+  background: rgba(0, 0, 0, 0.9);
+  @include animation(fadeIn 1.0s ease);
+  &:hover span {
+    &::before,
+    &::after {
+      background-color: gray;
+    }
+  }
+}
+
+.nav-trigger span {
+  position: absolute;
+  height: 4px;
+  width: 36px;
+  background-color: #fff;
+  &::before,
+  &::after {
+    position: absolute;
+    height: 4px;
+    width: 36px;
+    background-color: #fff;
+  }
+}
+
+.nav-trigger span {
+  &::before,
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    transition: background 0.3s, transform 0.3s;
+    background-color: #fff
+  }
+  &::before {
+    transform: translateY(-12px);
+  }
+  &::after {
+    transform: translateY(12px);
+  }
+}
+
+.nav-open .nav-trigger span {
+  background: transparent;
+  &::before {
+    transform: rotate(-45deg);
+  }
+  &::after {
+    transform: rotate(45deg);
+  }
+  &::before,
+  &::after {
+    background-color: white;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.nav-open .overlay {
+  height: 100%;
+  z-index: 10;
+  opacity: 1;
+}
+
+.nav-container {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 3.5rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  opacity: 0;
+  transition: background 0.3s ease-in;
+  h2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #CBC8C7;
+    margin: 1.5rem 0;
+  }
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  a {
+    display: block;
+    padding: 0.4rem;
+    font-size: 220%;
+    line-height: $base-line-height;
+    font-weight: bold;
+    font-family: $heading-font-family;
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.4s;
+    transform: translateZ(0);
+    &:hover {
+      color: gray;
+    }
+  }
+}
+
+.nav-open {
+  .nav-container {
+    z-index: 3;
+    padding-top: 5em;
+    display: block;
+    opacity: 1;
+  }
+}
+
+// Nav Transitions
+ul.nav {
+  position: relative;
+  display: block;
+  list-style: none;
+  li {
+    // border-bottom: 1px solid #333;
+    margin-top: 5px;
+    transform: scale(1.15) translateY(-30px);
+    opacity: 0;
+    transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+    @for $i from 1 through $menuItems {
+      &:nth-child(#{$i}) {
+        transition-delay: #{0.56 - ($i * 0.07)}s;
+      }
+    }
+    a {
+      display: block;
+      position: relative;
+      // color: #FFF;
+      text-decoration: none;
+      // font-size: 22px;
+      // line-height: 2.35;
+      // font-weight: 200;
+      width: 100%;
+    }
+  }
+}
+
+.nav-open .nav-container {
+  height: 100%;
+  transition: all 0.3s ease-in, background 0.5s ease-in;
+  transition-delay: 0.25s;
+  ul.nav {
+    li {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+      @for $i from 1 through $menuItems {
+        &:nth-child(#{$i}) {
+          transition-delay: #{0.07 * $i+0.2}s;
+        }
+      }
+    }
+  }
+}

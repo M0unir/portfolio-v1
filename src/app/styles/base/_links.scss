@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+.link {
+  color: $color-text-link;
+  text-decoration: none;
+  &:visited {
+    color: $color-text-link-visited;
+  }
+  &:hover,
+  &:visited:hover {
+    color: $color-black;
+    text-decoration: none;
+    font-weight: 300;
+    &:hover::after {
+      content: ' >';
+    }
+  }
+}
+
+// Scroll down link
+a.scroller {
+  padding: 50px 0;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none !important;
+  font: inherit;
+  cursor: pointer;
+  &:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+a.scroller span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  margin-top: -5px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+  color: #fff;
+}

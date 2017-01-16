@@ -1,0 +1,96 @@
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+
+.footer {
+  // @include linear-gradient(to bottom, #000, #10131a, $fallback: black);
+  background: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+  .footer h4 {
+    color: #b1aca1;
+  }
+  .copyright {
+    text-align: center;
+    opacity: 1;
+  }
+  .newsletter {
+    text-align: center;
+  }
+  .footer .main-nav {
+    float: none;
+    font-weight: 300;
+  }
+  .footer .footer-nav {
+    margin: 1rem auto;
+    text-align: center;
+  }
+  .footer ul.social {
+    margin: 0.5rem auto;
+    padding: 0rem !important;
+  }
+  .footer ul.social li {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .footer ul.social li a {
+    display: inline-block;
+    margin: 0rem 0.2rem;
+  }
+  footer .main-nav {
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+  footer .main-nav ul {
+    margin: 0px;
+    padding: 0;
+  }
+  footer .main-nav li {
+    display: inline-block;
+    margin: 0px 0;
+    padding: 0.1em;
+    position: relative;
+  }
+  footer .main-nav li a {
+    color: hsla(0, 0%, 100%, 0.79);
+    text-decoration: none;
+    padding: 0.1em 0.3em;
+    font-size: 1em;
+    transition: all .3s ease-out;
+  }
+  footer .main-nav li a:hover {
+    color: hsla(0, 0%, 100%, 1);
+  }
+  footer.footer {
+    background-color: $color-black;
+    color: #fff;
+    padding: 2rem 0rem;
+  }
+  footer .newsletter button.button {
+    font: inherit;
+    width: 20%;
+    padding: 0.3rem 0rem;
+  }
+  footer .newsletter input {
+    text-align: center;
+    font-size: inherit;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 70);
+    font: inherit;
+    border: 1px #6d499f;
+    color: #000;
+    opacity: 0.8 !important;
+    padding: 0.3rem 1rem;
+    width: 300px;
+    margin: 0.5rem 0.3rem;
+  }
+  footer .newsletter input:hover {
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .15), inset 0 0 0 1px #fff;
+    background-color: hsl(0, 0%, 100%);
+  }
+  footer .newsletter input:focus {
+    outline: none;
+    color: #000;
+    background-color: hsl(0, 0%, 100%);
+  }

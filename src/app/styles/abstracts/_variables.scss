@@ -1,0 +1,151 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+$bodybackground: black;
+
+
+
+
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+
+/*
+ * 1) Color variables involve a two-tier system to keep colors in sync. The
+ *    first tier defines the brand and neutral colors, and the second tier
+ *    defines the application of those colors.
+ */
+
+/*
+ * Brand Colors
+ * 1) Brand color variables use English names to define colors to make palettes easier to
+ *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
+ * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
+ *    second-tier application colors.
+ *
+ */
+ $color-brand-green: #5C832F;
+ $color-brand-green-dark: #3b4a20;
+
+/*
+ * Neutral Colors
+ * 1) Neutral color variables use a numbered system to define variables for better maintainability.
+ *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
+ *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
+ */
+$color-white: #fff;
+$color-gray-02: #f7f9f9;
+$color-gray-15: #d9d9d9;
+$color-gray-35: #a5a5a5;
+$color-gray-50: #808080;
+$color-gray-65: #595959;
+$color-gray-73: #444444;
+$color-gray-87: #222222;
+$color-black: #000;
+
+$color-dim-50: rgba(0,0,0,0.5);
+$color-dim-70: rgba(0,0,0,0.7);
+
+/**
+ * Utility Colors
+ * 1) Utility colors are colors used to provide feedback, such as alert messages,
+ * form validation, etc.
+ */
+$color-utility-positive: #03804d;
+$color-utility-postitive-subtle: #d4f3e6;
+$color-utility-caution: #a59b15;
+$color-utility-caution-subtle: #fffecf;
+$color-utility-negative: #b12a0b;
+$color-utility-negative-subtle: #fdded8;
+$color-utility-neutral: #0192d0;
+$color-utility-neutral-subtle: #d3f2ff;
+
+ /*
+  * Text Colors
+  * 1) These are non-linked text colors, such as body copy.
+  */
+$color-text: $color-black;
+$color-text-subtle: $color-gray-50;
+
+/*
+ * Heading Colors
+ * 1) These are non-linked heading colors, such as h2, h3, etc.
+ */
+$color-heading: $color-black;
+$color-heading-accent: $color-gray-87;
+
+/*
+ * Text Link Colors
+ * 1) These are for linked text, such as a link found within an article,
+ *    navigation link, footer link, etc.
+ */
+$color-text-link: $color-gray-87;
+$color-text-link-hover: $color-gray-73;
+$color-text-link-visited: $color-black;
+$color-text-link-active: $color-gray-87;
+
+$color-text-link-light: $color-white;
+$color-text-link-light-hover: $color-white;
+$color-text-link-light-visited: $color-white;
+
+/*
+ * Border Colors
+ * 1) Border colors are used as decoration or dividers, such as as a seperator
+ *    for navigation items, block borders, etc.
+ */
+$color-border: $color-gray-50;
+
+/*
+ * Gradient Colors
+ */
+
+.first-gradient {
+  background: -webkit-linear-gradient($color-black, $color-gray-50);
+  background: -o-linear-gradient($color-black, $color-gray-50);
+  background: -moz-linear-gradient($color-black, $color-gray-50);
+  background: linear-gradient($color-black, $color-gray-50);
+}
+.second-gradient {
+  background: -webkit-linear-gradient($color-gray-50, white);
+  background: -o-linear-gradient($color-gray-50, white);
+  background: -moz-linear-gradient($color-gray-50, white);
+  background: linear-gradient($color-gray-50, white);
+}
+.third-gradient {
+  background: -webkit-linear-gradient(white, lightgreen);
+  background: -o-linear-gradient(white, lightgreen);
+  background: -moz-linear-gradient(white, lightgreen);
+  background: linear-gradient(white, lightgreen);
+}
+
+
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,400i|Roboto+Condensed:100,200,300,700|Roboto:100,300,400,700,900';
+
+$text-color: #4c5467;
+$quiet-color: #ccc;
+$loud-color: #333;
+$heading-color: #10131a;
+$accent: rgb(163, 163, 158);
+
+$link-color: #d54aaf;
+$link-hover-color: saturate(#d54aaf, 20%);
+$link-visited-color: purple;
+
+$base-font-family: 'Roboto Condensed', sans-serif;
+$base-font-size: 18px;
+$base-font-weight: 300;
+$base-line-height: 1.6;
+
+$fixed-font-family: 'Andale Mono', AndaleMono, monospace;
+$fixed-font-size: 15px;
+$fixed-line-height: 1.2;
+
+$heading-font-family: 'Roboto Condensed', sans-serif;
+$heading-font-weight: 700;
+
+$font : "Raleway", "Helvetica", "Arial", sans-serif;
+$font-tertiary : "Roboto Condensed", sans-serif;

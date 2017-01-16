@@ -1,0 +1,96 @@
+/*------------------------------------*\
+    #GLOBAL CLASSES
+\*------------------------------------*/
+
+/**
+ * Clearfix
+ */
+.cf {
+  *zoom: 1;
+}
+/**
+ * Clearfix pseudo-elements
+ */
+.cf:after,
+.cf:before {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-center {
+  margin: 0 auto;
+}
+
+.push-right {
+  text-align: right;
+}
+
+.push-left {
+  text-align: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margins {
+  margin: 0 auto !important;
+}
+
+hr.transparent {
+  border-top: 1px solid transparent;
+}
+
+hr.big {
+  margin: 1.5em auto;
+}
+
+hr.huge {
+  margin: 2.5em auto;
+}
+
+hr.gigantic {
+  margin: 5em auto;
+}
+
+hr.short {
+  border-top: 1px solid transparent;
+}
+
+.xs-center {
+  @include MQ(S) {
+    text-align: center;
+    margin: 0 auto;
+  };
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

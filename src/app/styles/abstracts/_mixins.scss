@@ -1,0 +1,164 @@
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+
+@include keyframes(bounceIn) {
+  0% {
+      opacity: 0;
+      @include transform(scale(0.3));
+  }
+
+  50% {
+      opacity: 0.3;
+      @include transform(scale(1.05));
+  }
+
+  70% {
+      opacity: 0.9;
+      @include transform(scale(0.9));
+  }
+
+  100% {
+      opacity: 1;
+      @include transform(scale(1));
+  };
+}
+
+
+@-webkit-keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.3);
+        transform: scale(0.3)
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05)
+    }
+
+    70% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.3);
+        transform: scale(0.3)
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05)
+    }
+
+    70% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes bounceInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px)
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px)
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+// for scroller
+@-webkit-keyframes sdb {
+	0% {
+		-webkit-transform: rotate(-45deg) translate(0, 0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: rotate(-45deg) translate(-20px, 20px);
+		opacity: 0;
+	}
+}
+@keyframes sdb {
+	0% {
+		transform: rotate(-45deg) translate(0, 0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: rotate(-45deg) translate(-20px, 20px);
+		opacity: 0;
+	}
+}
+
+
+// transitions
+.animate-fade {
+	@include transition(opacity, .3s, ease-out);
+
+	&:hover {
+		opacity: 0;
+	}
+}
+
+
+
+// breakpoints
+
+$S:     480px;
+$M:     768px;
+$L:     1170px;
+$XL:     1280px;
+
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (max-width: $S) { @content; }
+  }
+  @else if $canvas == M {
+   @media only screen and (max-width: $M) { @content; }
+  }
+  @else if $canvas == L {
+   @media only screen and (max-width: $L) { @content; }
+  }
+  @else if $canvas == XL {
+   @media only screen and (min-width: $L) { @content; }
+  }
+}
+

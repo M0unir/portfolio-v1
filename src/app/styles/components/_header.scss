@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+.header-block {
+  font-size: 110%;
+  // @include animation(fadeIn 3s 0s);
+
+  @include MQ(S){
+    font-size: 80%;
+  };
+
+  .header {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 40;
+}
+
+  &.typography {
+
+    h1 {
+      font-size: 450%;
+      margin-top: 0 !important;
+      // @include animation(fadeInUp 2s 0s);
+    }
+
+    h6 {
+      // @include animation(fadeInUp 2s 0s);
+    }
+
+    button {
+      // @include animation(fadeInUp 2s 0s);
+    }
+    a.scroller {
+      // @include animation(fadeIn 2s 0s);
+    }
+  }
+}

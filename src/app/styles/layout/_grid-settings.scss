@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+@import "../vendor/neat/neat-helpers "; // or "neat-helpers" when in Rails
+
+// Change the grid settings
+// $column: 90px;
+$gutter: 30px;
+$grid-columns: 12;
+$max-width: 100px;
+
+$visual-grid: true;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;

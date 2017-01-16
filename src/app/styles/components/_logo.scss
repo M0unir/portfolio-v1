@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    #LOGO
+\*------------------------------------*/
+
+.logo {
+	position: absolute;
+  width: 80px;
+  height: 60px;
+  background:url("../../../assets/images/logo.png") 0 0/100% auto no-repeat;
+  top: 40px;
+  left: 3%;
+	z-index: 2;
+  // top:100px;
+  // @include transform(translateX(-50%) translateY(-50%));
+  @include MQ(M) {
+    // top: 25px;
+    left: 5%;
+  	}
+
+  @include MQ(S) {
+    // top: 35px;
+    left: 8%;
+    }
+}

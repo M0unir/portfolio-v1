@@ -1,0 +1,53 @@
+<section id="section-contact" class=" section-contact">
+  <div class="overlay-wrapper">
+    <div class="container">
+      <div class="section">
+        <hr class="huge transparent">
+        <div class="text-center header-block typography light">
+          <h1 class="animated fadeIn">Say Hi!</h1>
+          <p class="animated fadeIn">Interested in working together? Or just want to say ‘Hi’? Please use the contact form below and I will be in contact
+            with you as soon as I can.</p>
+        </div>
+        <hr class="huge transparent">
+        <div ng-cloak ng-if="!loading && serverMessage"><i class="material-icons center">done</i>{{serverMessage}}</div>
+        <form action="" id="contactform">
+          <fieldset>
+            <div class="row">
+              <div class="col-full xs-full">
+                <div>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" ng-model="mail.name" placeholder="Enter Name" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-full xs-full">
+                <div>
+                  <label for="mail">E-mail:</label>
+                  <input type="email" id="mail" ng-model="mail.from" placeholder="Enter Email" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-full xs-full">
+                <div>
+                  <label for="msg">Message:</label>
+                  <textarea id="msg" ng-model="mail.message" placeholder="Enter Message"></textarea>
+                </div>
+              </div>
+            </div>
+            <hr class="huge transparent">
+            <div class="row">
+              <div class="col-full xs-full">
+                <div class="text-center">
+                  <button ng-submit="send(mail)" class="btn">Send your message</button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <hr class="huge transparent">
+    </div>
+  </div>
+</section>

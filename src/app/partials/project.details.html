@@ -1,0 +1,27 @@
+<div class="section">
+  <button class="btn-inverted" ui-sref="projects.list">Go Back to List</button>
+  <hr class="short transparent ">
+  <h1>{{project.title}}</h1>
+  <h4>{{project.type}}</h4>
+  <p>{{project.description}}</p>
+  <hr class="short transparent ">
+  <div class="row projects ">
+    <div class="col-full">
+      <img width="100%" class="animated fadeIn" src="{{project.image}}" alt="{{project.title}}-{{project-type}}">
+    </div>
+    <div class="project-description-full">
+      <div class="description-container">
+        <hr class="short transparent">
+        <ul><span class="h5">Technologies:</span>
+          <li class="tech-skills" ng-repeat="skill in project.skills">{{skill}}</li>
+        </ul>
+        <p><strong class="h5">Visit:</strong> <a class="link" ng-href="{{project.link}}" target="_blank">
+           {{project.link}}
+         </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="gigantic transparent ">
+  <hr class="gigantic transparent">

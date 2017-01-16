@@ -1,0 +1,12 @@
+# Mac finder artifacts
+.DS_Store
+
+# Other
+node_modules/
+bower_components/
+.idea/
+.tmp/
+Other/
+dist/
+access.log
+TODO.md

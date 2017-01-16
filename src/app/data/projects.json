@@ -1,0 +1,148 @@
+[{
+  "id": "1",
+  "slug": "biz-app",
+  "title": "Biz-App",
+  "type": "Web Application Development",
+  "description": "Biz-App is a SASS web application for interactive business planning for entrepreneurs and business owners to get the help they need to launch their business ideas. It was built from scratch with ruby on rails and features users and file management.It also integrates with other APIs.",
+  "skills": [
+    "Ruby on Rails",
+    "Twitter Boostrap",
+    "HTML",
+    "CSS",
+    "Javascript",
+    "Ajax",
+    "Sheetsee.js",
+    "Sass",
+    "PostgreSQL",
+    "Heroku",
+    "Balsamiq Mockups",
+    "Mpower Payments API"
+  ],
+  "client": "Diabetes Australia",
+  "image": "../../assets/images/squares/biz-app.png",
+  "link": "http://biz-app.com.gh/"
+}, {
+  "id": "2",
+  "slug": "transrobotics",
+  "title": "Transrobotics",
+  "type": "Website Development",
+  "description": "Transrobotics is developing the world's first digital micro radar with sub-millimeter accuracy. Besides slightly working on stealthhealth.co, which is another product of the company, I was fortunate enough to be part of an amazing journey where I assisted in the development of a new generation of the unit specialized in drone detection. I was responsible for the development of a fully responsive site to showcase the product and display its technical features and also work on internal products of the company mainly building user interfaces and charts",
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "jQuery",
+    "Twitter Bootstrap",
+    "PHP",
+    "Chart.js",
+    "node.js",
+    "socket.io"
+  ],
+  "client": "Diabetes Australia",
+  "image": "../../assets/images/squares/transrobotics.png",
+  "link": "https://www.antirobotics.com/"
+}, {
+  "id": "3",
+  "slug": "priority-analysis",
+  "title": "Priority Analysis",
+  "type": "Website Development",
+  "description": "Priority Analysis is a disability evalutions firm that was in need of a website to mainly list their locations for users and display forms for potential hires. They were also in need of a better way to manage their doctors/clients/files in a less complicated way which I helped solve by implementing a very popular open source users/files HIPAA compliant management system that was hosted on a secure VPS with SSL enabled. The website was built with Bootstrap, jQuery and the forms were handled through PHP and MySQL.",
+  "skills": [
+    "HTML & CSS",
+    "jQuery",
+    "Twitter Bootstrap",
+    "PHP",
+    "MySQL",
+    "Pydio"
+  ],
+  "client": "Priority Analysis",
+  "image": "../../assets/images/squares/priority-analysis.png",
+  "link": "http://www.priorityanalysis.com/"
+}, {
+  "id": "4",
+  "slug": "cava-consulting",
+  "title": "CAVA Consulting",
+  "type": "Website Development",
+  "description": "CAVA Consulting is a Business Consulting firm that helps young entrepreneurs, small business owners and idea holders to launch or grow their ideas through coaching, training programs and help them get ready for state loans or initial funding for their startups. I was responsible for their international and domestic websites development and integrating several open source projects to optimize their workflow.",
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "jQuery",
+    "Twitter Bootstrap",
+    "PHP",
+    "Wordpress CMS",
+    "SEO"
+  ],
+  "client": "cava consulting",
+  "image": "../../assets/images/squares/cava-consulting.png",
+  "link": "http://www.cavaconsulting.biz"
+}, {
+  "id": "5",
+  "slug": "djembe-senegal",
+  "title": "Djembe Senegal",
+  "type": "Website Development",
+  "description": "Website ",
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "jQuery",
+    "Twitter Bootstrap",
+    "PHP"
+  ],
+  "client": "Djembe Senegal",
+  "image": "../../assets/images/squares/djembe-senegal.png",
+  "link": "https://djembe-senegal.com"
+}, {
+  "id": "6",
+  "slug": "personal-portfolio",
+  "title": "Portfolio",
+  "type": "Website Development (Under development)",
+  "description": "Personal Portfolio site designed and coded from scratch to showcase my skills and past work. Written in HTML5/CSS3, handled through AngularJS and Gulp <3. Hosted on Heroku, protected by Cloudflare.",
+  "skills": [
+    "jQuery",
+    "HTML",
+    "CSS",
+    "Wordpress CMS",
+    "PHP"
+  ],
+  "client": "personal",
+  "image": "../../assets/images/squares/portfolio.png",
+  "link": "http://mounirchouladi.me/"
+}, {
+  "id": "8",
+  "slug": "reddit-clone",
+  "title": "Reddit/Hacker News clone",
+  "type": "Open source",
+  "description": "Web application built on the MEAN stack (MongoDB, Express, Angular, Node)",
+  "skills": [
+    "Node.js",
+    "HTML",
+    "CSS",
+    "SASS",
+    "Javascript",
+    "Angular.js",
+    "Gulp"
+  ],
+  "client": "personal",
+  "image": "../../assets/images/squares/reddit-clone.png",
+  "link": "http://www.github.com/m0unir/reddit-clone"
+}, {
+  "id": "7",
+  "slug": "personal-portfolio-old",
+  "title": "Old portfolio",
+  "type": "Website Development",
+  "description": "Personal responsive website written in simple and clean HTML5, CSS3 and JAVASCRIPT.",
+  "skills": [
+    "Node.js",
+    "HTML & CSS",
+    "SASS",
+    "Javascript",
+    "Angular.js",
+    "Gulp"
+  ],
+  "client": "personal",
+  "image": "../../assets/images/squares/portfolio-old.png",
+  "link": "http://www.github.com/m0unir/"
+}]

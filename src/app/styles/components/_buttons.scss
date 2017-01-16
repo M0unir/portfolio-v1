@@ -1,0 +1,55 @@
+  /*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+  
+  button {
+    background: transparent;
+    border: none;
+    outline: none
+  }
+  
+  .button {
+    display: inline-block;
+    // height: 48px;
+    padding: 10px 22px;
+    border-radius: 0;
+    font-family: $base-font-family;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 1.15 !important;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-transition: background .4s, color .4s;
+    transition: background .4s, color .4s;
+    cursor: pointer;
+  }
+  
+
+  .btn,
+  a.btn {
+    @extend .button;
+    border: 2px solid #ddd;
+    &:hover {
+      background: none;
+      background-color: #ddd;
+      color: #10131a;
+            text-decoration: none;
+
+    }
+  }
+  
+  .btn-inverted,
+  a.btn-inverted {
+    @extend .button;
+    color: #10131a;
+    border: 2px solid #10131a;
+    &:hover,&:hover:visited {
+      background: #10131a;
+      color: #fff;
+    }
+  }

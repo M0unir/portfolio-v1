@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "postinstall": "gulp build",
-    "heroku-postbuild": "gulp build"
+    "build": "./node_modules/gulp/bin/gulp build",
+    "postinstall": "./node_modules/gulp/bin/gulp build",
+    "heroku-postbuild": "./node_modules/gulp/bin/gulp build"
   },
   "repository": {
     "type": "git",

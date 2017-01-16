@@ -7,6 +7,5 @@ bower_components/
 .idea/
 .tmp/
 Other/
-dist/
 access.log
 TODO.md

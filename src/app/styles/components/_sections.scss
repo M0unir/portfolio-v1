@@ -197,13 +197,13 @@
     display: inline;
     list-style: none;
 
-    &::after {
-      content: ', ';
-    }
+    // &::after {
+    //   content: ', ';
+    // }
 
-    &:last-of-type::after {
-      content: '';
-    }
+    // &:last-of-type::after {
+    //   content: '';
+    // }
   }
   @include span-columns(5);
   @include MQ(M) {

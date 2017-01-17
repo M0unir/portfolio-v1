@@ -22,7 +22,7 @@
   }
 
   /** @ngInject */
-  function ProjectController($scope, project, $timeout, $anchorScroll) {
+  function ProjectController($scope, project, $timeout, $anchorScroll, $stateParams) {
     console.log('ProjectController loaded...');
 
     $scope.pageClass = 'project-page';

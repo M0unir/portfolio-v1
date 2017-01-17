@@ -14,7 +14,7 @@ function ProjectsService($http) {
     
     getProject: function(id) {
       function projectMatchesParam(project) {
-        return project.id === id;
+        return project.slug === id;
       }
       
       return service.getAllProjects().then(function (projects) {

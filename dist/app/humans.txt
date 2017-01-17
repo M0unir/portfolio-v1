@@ -1,8 +1,0 @@
-# TEAM
-
-    Mounir Chouladi -- @m0unir
-
-# TECHNOLOGY
-
-    CSS3, HTML5, AngularJS, UI router, Gulp, SASS, Bower,
-    Atomic Design

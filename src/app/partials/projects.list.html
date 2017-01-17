@@ -15,7 +15,7 @@
              <li ng-repeat="skill in project.skills">{{skill}}</li>
            </ul>-->
           <!--<button class="btn-inverted" ui-sref="projects.details({ personId: person.id })">Check project</button>-->
-          <a class="btn-inverted" style="margin-top:18px;" ui-sref="projects.details({ projectId: project.id })">Check project</a>
+          <a class="btn-inverted" style="margin-top:18px;" ui-sref="projects.details({ projectId: project.slug })">Check project</a>
         </div>
       </div>
     </li>

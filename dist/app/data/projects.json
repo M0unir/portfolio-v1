@@ -3,7 +3,7 @@
   "slug": "biz-app",
   "title": "Biz-App",
   "type": "Web Application Development",
-  "description": "Biz-App is a SASS web application for interactive business planning for entrepreneurs and business owners to get the help they need to launch their business ideas. It was built from scratch with ruby on rails and features users and file management.It also integrates with other APIs.",
+  "description": "Biz-App is a SASS web application for interactive business planning for entrepreneurs and business owners to get the help they need to launch their business ideas. It was built from scratch using ruby on rails and features a users and file management system. It also integrates well with other APIs.",
   "skills": [
     "Ruby on Rails",
     "Twitter Boostrap",

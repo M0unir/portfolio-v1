@@ -37,7 +37,7 @@ app.post('/send', function (req, res) {
     var mail = new helper.Mail(from_email, subject, to_email, content);
     // console.log(mail);
 
-    var sg = require('sendgrid')("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");
+    var sg = require('sendgrid')(process.env.SENDGRID);
     var request = sg.emptyRequest({
         method: 'POST',
         path: '/v3/mail/send',

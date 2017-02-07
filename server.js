@@ -20,8 +20,6 @@ app.use(bodyParser.urlencoded({
 }));
 
 
-
-
 // MAIL SETTINGS
 app.post('/send', function (req, res) {
     console.log(req.body);
@@ -37,7 +35,7 @@ app.post('/send', function (req, res) {
     var mail = new helper.Mail(from_email, subject, to_email, content);
     // console.log(mail);
 
-    var sg = require('sendgrid')(process.env.SENDGRID);
+    var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
     var request = sg.emptyRequest({
         method: 'POST',
         path: '/v3/mail/send',

@@ -1,18 +1,37 @@
-# mounir
+# Portfolio Website (2017)
+
 Personal website built with AngularJS
 
-# Requirements
+![Portfolio Preview](https://raw.githubusercontent.com/M0unir/portfolio/master/src/assets/images/preview.png)
+
+[Check it out here!](https://mounir.herokuapp.com/ )
+
+## Requirements
+
 You need to have these installed to build the project
-code npm i gulp -g
-     npm i bower -g
 
-# Installation
-h3 Download the project
-code git clone url
-      npm i && bower i
+```bash
+npm i gulp -g
+npm i bower -g
+```
 
-h3 Build project
-  gulp build
+## Installation
 
-h3 Launch project
-  gulp serve:dist 
+### Download the project
+
+```bash
+git clone https://github.com/M0unir/portfolio.git
+npm i && bower i
+```
+
+### Build project
+
+```bash
+gulp build
+```
+
+### Launch project
+
+```bash
+gulp serve:dist
+```

@@ -2,7 +2,7 @@
 
 Personal website built with AngularJS
 
-![Portfolio Preview](https://raw.githubusercontent.com/M0unir/portfolio/master/src/assets/images/preview.png)
+![Portfolio Preview](https://raw.githubusercontent.com/M0unir/portfolio-v1/master/src/assets/images/preview.png)
 
 [Check it out here!](https://mounir.herokuapp.com/ )
 

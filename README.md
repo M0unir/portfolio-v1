@@ -1,6 +1,6 @@
 # Portfolio Website (2017)
 
-Personal website built with AngularJS
+Personal website built with Node, Gulp and AngularJS (2017)
 
 ![Portfolio Preview](https://raw.githubusercontent.com/M0unir/portfolio-v1/master/src/assets/images/preview.png)
 

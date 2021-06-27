@@ -4,7 +4,7 @@ Personal website built with Node, Gulp and AngularJS (2017)
 
 ![Portfolio Preview](https://raw.githubusercontent.com/M0unir/portfolio-v1/master/src/assets/images/preview.png)
 
-[Check it out here!](https://mounir.herokuapp.com/ )
+<a href="https://mounir.herokuapp.com/" target="_blank" >Check it out here!</a>
 
 ## Requirements
 
